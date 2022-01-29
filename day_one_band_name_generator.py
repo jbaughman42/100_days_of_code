@@ -1,5 +1,5 @@
 """
-day_one
+day_one_band_name_generator
 Created January 28, 2022 by Jennifer Baughman
 
 Description: Band Name Generator program
