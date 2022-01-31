@@ -1,6 +1,6 @@
 import pytest
 
-from day_three_love_calculator import check_letters, love_score
+from day_3.love_calculator import check_letters, love_score
 
 love_score_data = [
     (("Adam", "Jim"), "Your score is 0; you go together like Coke and Mentos."),
