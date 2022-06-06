@@ -37,8 +37,41 @@ def deal_cards(hand):
     hand.append(choice(cards))
 
 
+def check_blackjack(player_hand, dealer_hand):
+
+
+
+def play_game():
+    print("Dealing cards...")
+    
+    player_hand = []
+    dealer_hand = []
+
+    for i in range(2):
+        deal_cards(player_hand)
+        deal_cards(dealer_hand)
+        
+    print(f"Player holds: {', '.join([str(i) for i in player_hand])}")
+    print(f"Dealer holds: {dealer_hand[0]}, X")
+    
+    blackjack = check_blackjack(player_hand, dealer_hand)
+    
+    action = None
+    while action not in ("H", "S"):
+        action = input("Player: (H)it or (S)tand? ").upper()
+        
+    if action == "H":
+        print("Player hits!")
+        deal_cards(player_hand)
+        print(f"Player holds: {', '.join([str(i) for i in player_hand])}")
+        
+
 def main():
-    pass
+    print(logo)
+    
+    new_game = True
+    if new_game:
+        play_game()
 
 
 if __name__ == '__main__':
